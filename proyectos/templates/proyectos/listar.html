@@ -1,0 +1,4 @@
+{% for proyecto in proyectos %}
+    <p>{{ proyecto.nombre }} - <a href="{% url 'editar_proyecto' proyecto.nombre %}">Editar</a></p>  
+{% endfor %}
+<a href="{% url 'registrar_proyecto' %}">Registrar proyecto</a>
